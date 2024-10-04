@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import NomeCards from './components/NomeCards';
 
 function App() {
   const [nome, setNome] = useState('Breno')
@@ -22,8 +23,10 @@ function App() {
     <>
       {alunos.map((alunos) =>
         <>
-        <h3>{alunos.nome}</h3>
-        <p>{alunos.nomeCompleto}</p>
+        <NomeCards
+        nome={alunos.nome} 
+        nomeCompleto={alunos.nomeCompleto} 
+        />
         </>
         
       )}
