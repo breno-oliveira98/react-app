@@ -8,3 +8,4 @@ function NomeCards({nome, nomeCompleto}) {
 }
 
 export default NomeCards;
+

@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import './App.css'
 import NomeCards from './components/NomeCards';
 
 function App() {
-  const [nome, setNome] = useState('Breno')
-  let novoNome = 'Gustavo';
   const alunos = [
     {
       nome: 'Alberto',
@@ -21,6 +18,7 @@ function App() {
   ]
   return (
     <>
+    
       {alunos.map((alunos) =>
         <>
         <NomeCards
@@ -28,7 +26,6 @@ function App() {
         nomeCompleto={alunos.nomeCompleto} 
         />
         </>
-        
       )}
 
     </>
